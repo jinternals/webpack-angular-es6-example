@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Angular Seed </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#!/view1">view1</a></li>
+          <li><a href="#!/view2">view2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    
+    <div ng-view></div>
+    <footer>
+      Angular seed app: v<app-version></app-version>
+      <br>
+      {{ 'my version VERSION' | interpolate}}
+    </footer>
+  </body>
+</html>
